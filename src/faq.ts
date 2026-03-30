@@ -244,8 +244,16 @@ export const faqData: FAQSection[] = [
                         items: [
                             "Cada receita custa a partir de R$ 45,90. Receitas especiais podem ter acréscimo, indicado antes da confirmação.",
                             "Você pode ajustar o número de pessoas, e o preço é atualizado no carrinho.",
-                            "A taxa de entrega é R$ 15 por semana.",
                         ],
+                    },
+                ],
+            },
+            {
+                question: "Qual a taxa de entrega?",
+                answer: [
+                    {
+                        type: "text",
+                        items: ["A taxa de entrega é de R$ 15,00 por semana."],
                     },
                 ],
             },
