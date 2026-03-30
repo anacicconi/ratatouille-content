@@ -1,13 +1,13 @@
-type AnswerBlock =
+export type FAQAnswer =
     | { type: "text"; items: string[] }
     | { type: "list"; items: string[] };
 
-type FAQItem = {
+export type FAQItem = {
     question: string;
-    answer: AnswerBlock[];
+    answer: FAQAnswer[];
 };
 
-type FAQSection = {
+export type FAQSection = {
     title: string;
     items: FAQItem[];
 };
@@ -115,7 +115,7 @@ export const faqData: FAQSection[] = [
                         type: "text",
                         items: [
                             "O app mostra o cardápio das próximas 4 semanas, permitindo que você planeje suas escolhas. Pode até receber sugestões com base nas suas preferências, mas você pode editar livremente.",
-                            "Para a semana seguinte, escolha ou edite suas receitas até quinta-feira da semana anterior, até às 23h59, quando o menu será fechado.",
+                            "Para a semana seguinte, escolha ou edite suas receitas até quinta-feira da semana anterior, até às 16h00, quando o menu será fechado.",
                             "Depois de confirmar, seu cartão será cobrado apenas pelas receitas escolhidas, e a entrega chega na terça-feira com ingredientes frescos, passo a passo impresso e vídeo tutorial para cozinhar com confiança.",
                         ],
                     },
@@ -281,6 +281,19 @@ export const faqData: FAQSection[] = [
                         items: [
                             "A cobrança acontece toda quinta-feira, referente às receitas da semana seguinte.",
                             "O pagamento é automático no cartão cadastrado e aparece no carrinho antes da confirmação.",
+                        ],
+                    },
+                ],
+            },
+            {
+                question: "O que fazer se o pagamento falhar?",
+                answer: [
+                    {
+                        type: "text",
+                        items: [
+                            "Se o pagamento falhar, você receberá um e-mail avisando com um link para corrigir o problema.",
+                            "Você pode tentar novamente ou entrar em contato para resolver o problema até quinta-feira da semana anterior, às 23h59.",
+                            "Após esse prazo, não será possível fazer a cobrança e a semana será cancelada automaticamente.",
                         ],
                     },
                 ],
