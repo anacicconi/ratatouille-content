@@ -180,7 +180,7 @@ export const faqData: FAQSection[] = [
         ],
     },
     {
-        title: "Receitas e Ingredientes",
+        title: "Receitas",
         items: [
             {
                 question: "O que exatamente vem no kit?",
@@ -234,7 +234,7 @@ export const faqData: FAQSection[] = [
         ],
     },
     {
-        title: "Preços e Pagamento",
+        title: "Pagamento",
         items: [
             {
                 question: "Quanto vou gastar por semana?",
@@ -371,7 +371,7 @@ export const faqData: FAQSection[] = [
         ],
     },
     {
-        title: "Contato e Suporte",
+        title: "Suporte",
         items: [
             {
                 question: "Como falo com vocês?",
