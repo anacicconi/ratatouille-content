@@ -61,7 +61,7 @@ export const faqData: FAQSection[] = [
                     {
                         type: "text",
                         items: [
-                            "Não! A Saboreô entrega apenas os ingredientes e o método completo para você cozinhar.",
+                            "Não. A Saboreô entrega apenas os ingredientes e o método completo para você cozinhar.",
                             "Você segue o passo a passo impresso e o vídeo, e o prato sai como planejado pelo chef, sem improviso.",
                         ],
                     },
